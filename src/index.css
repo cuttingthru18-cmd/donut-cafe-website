@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cafe-cream: #FFF8F0;
+  --color-cafe-warm: #F5E6D3;
+  --color-cafe-brown: #8B6547;
+  --color-cafe-dark: #3C2415;
+  --color-cafe-orange: #E8843C;
+  --color-cafe-coral: #F4A67A;
+  --color-cafe-mint: #7ECFC0;
+  --color-cafe-lime: #CBEF43;
+  --color-cafe-purple: #9B7DC4;
+  --color-cafe-pink: #F9A8C9;
+  --color-cafe-yellow: #FFD23F;
+  --color-cafe-donut: #F8B4C8;
+  --color-cafe-sky: #A8D8F0;
+  --color-cafe-glass: rgba(255, 255, 255, 0.15);
+  --color-cafe-glass-border: rgba(255, 255, 255, 0.3);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-cafe-cream);
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.glass-dark {
+  background: rgba(60, 36, 21, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-colored {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #F8B4C8, #E8843C, #FFD23F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cool {
+  background: linear-gradient(135deg, #7ECFC0, #A8D8F0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-donut {
+  background: linear-gradient(135deg, #F8B4C8, #F9A8C9, #E8843C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-hero {
+  background: linear-gradient(160deg, #FFF8F0 0%, #FEF0E7 25%, #FFF0F5 50%, #FFF8F0 100%);
+}
+
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E\");
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(248, 180, 200, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(248, 180, 200, 0.6); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 4s ease-in-out infinite 1s;
+}
+
+.animate-float-delay-2 {
+  animation: float 4s ease-in-out infinite 2s;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
