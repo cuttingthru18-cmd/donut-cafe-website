@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Calendar } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 
 const wordVariants = {
   hidden: { opacity: 0, y: 40, rotateX: -40 },
@@ -42,8 +42,6 @@ export function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 w-full">
         <div className="max-w-3xl">
-          {/* Opening Badge Removed as per user request */}
-
           {/* Kinetic Heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
             {words.map((word, i) => (
