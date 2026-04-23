@@ -11,7 +11,7 @@ const shopItems = [
   { name: 'Kitty Tote Bag', price: '$22.00', emoji: '👜', bg: 'from-pink-100 to-fuchsia-100', image: 'https://customer-assets.emergentagent.com/wingman/d53aa737-c70f-4389-9325-d25ce0b4093e/attachments/1dacfc580fcd4123a3cfdf012904ea6b_IMG_1487.PNG' },
   { name: 'Espresso Gift Set', price: '$29.99', emoji: '🎁', bg: 'from-amber-100 to-orange-100', image: 'https://customer-assets.emergentagent.com/wingman/d53aa737-c70f-4389-9325-d25ce0b4093e/attachments/6c10b06c5f3c481091be500793e740eb_IMG_1488.PNG' },
   { name: 'Cat Paw Coasters (4pk)', price: '$11.50', emoji: '🐾', bg: 'from-yellow-100 to-amber-100', image: 'https://customer-assets.emergentagent.com/wingman/d53aa737-c70f-4389-9325-d25ce0b4093e/attachments/9ad5bf354b66451b926a385b8ffa5d9d_IMG_1486.PNG' },
-  { name: 'Donut Sprinkle Socks', price: '$9.99', emoji: '🧦', bg: 'from-cyan-100 to-blue-100', image: 'https://customer-assets.emergentagent.com/wingman/d53aa737-c70f-4389-9325-d25ce0b4093e/attachments/5b1f86f78f8541e285a2103f562eb8cd_IMG_1489.PNG' },
+  { name: 'Donut Sprinkle Socks', price: '$9.99', emoji: '🧦', bg: 'from-cyan-100 to-blue-100', image: 'https://customer-assets.emergentagent.com/wingman/d53aa737-c70f-4389-9325-d25ce0b4093e/attachments/399e8a2ab5ab41bb98a2be8832ec1849_IMG_1490.PNG' },
   { name: 'Shelter Donation Card', price: '$5.00', emoji: '❤️', bg: 'from-rose-100 to-pink-100', image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=400&q=80' },
 ]
 
