@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Hero } from './components/Hero.tsx'
-import { BentoGrid } from './components/BentoGrid.tsx'
-import { FeaturedMenu } from './components/FeaturedMenu.tsx'
-import { ShopTheAisle } from './components/ShopTheAisle.tsx'
-import { MysteryBox } from './components/MysteryBox.tsx'
-import { Footer } from './components/Footer.tsx'
-import { Navbar } from './components/Navbar.tsx'
-import { RunningCat } from './components/RunningCat.tsx'
+import { Hero } from './components/Hero'
+import { BentoGrid } from './components/BentoGrid'
+import { FeaturedMenu } from './components/FeaturedMenu'
+import { ShopTheAisle } from './components/ShopTheAisle'
+import { MysteryBox } from './components/MysteryBox'
+import { Footer } from './components/Footer'
+import { Navbar } from './components/Navbar'
+import { RunningCat } from './components/RunningCat'
 
 function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className={`relative ${!isMobile ? 'cursor-none' : ''} min-h-screen bg-cafe-cream`}>
-      {/* Custom Cursor */}
+      {/* Custom Cursor - Disabled on Mobile for performance */}
       {!isMobile && (
         <motion.div
           className="fixed top-0 left-0 w-8 h-8 pointer-events-none z-[100] text-2xl select-none flex items-center justify-center"
@@ -59,7 +59,7 @@ function App() {
 
       <Navbar />
       
-      {/* Running Cat is permanent */}
+      {/* Running Cat is permanent but lighter on mobile */}
       <RunningCat />
 
       <motion.div
@@ -76,7 +76,7 @@ function App() {
         <Footer />
       </motion.div>
 
-      {/* Permanent Rain Effect */}
+      {/* Permanent Rain Effect - Optimized Count */}
       <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
         {[...Array(isMobile ? 8 : 15)].map((_, i) => (
           <motion.div
