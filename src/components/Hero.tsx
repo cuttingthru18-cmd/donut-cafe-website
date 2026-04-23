@@ -42,18 +42,7 @@ export function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 w-full">
         <div className="max-w-3xl">
-          {/* Opening Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="inline-flex items-center gap-2 glass rounded-full px-5 py-2.5 mb-8"
-          >
-            <Calendar className="w-4 h-4 text-cafe-donut" />
-            <span className="text-sm font-semibold text-cafe-dark/80">
-              OPENING END OF MARCH — Get ready for sprinkles! 🍩
-            </span>
-          </motion.div>
+          {/* Opening Badge Removed as per user request */}
 
           {/* Kinetic Heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
