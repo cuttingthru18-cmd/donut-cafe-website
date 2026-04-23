@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Hero } from './components/Hero'
-import { BentoGrid } from './components/BentoGrid'
-import { FeaturedMenu } from './components/FeaturedMenu'
-import { ShopTheAisle } from './components/ShopTheAisle'
-import { MysteryBox } from './components/MysteryBox'
-import { Footer } from './components/Footer'
-import { Navbar } from './components/Navbar'
-import { RunningCat } from './components/RunningCat'
+import { Hero } from './components/Hero.tsx'
+import { BentoGrid } from './components/BentoGrid.tsx'
+import { FeaturedMenu } from './components/FeaturedMenu.tsx'
+import { ShopTheAisle } from './components/ShopTheAisle.tsx'
+import { MysteryBox } from './components/MysteryBox.tsx'
+import { Footer } from './components/Footer.tsx'
+import { Navbar } from './components/Navbar.tsx'
+import { RunningCat } from './components/RunningCat.tsx'
 
 function App() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
