@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Heart, Globe, MapPin, Clock, Phone } from 'lucide-react'
+import { Heart, Globe, Clock, Phone } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -76,12 +76,6 @@ export function Footer() {
           <div>
             <h4 className="font-bold text-sm uppercase tracking-wider text-white/40 mb-4">Visit Us</h4>
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-cafe-donut mt-0.5 flex-shrink-0" />
-                <span className="text-white/60 text-sm">
-                  123 Whisker Lane<br />Brooklyn, NY 11201
-                </span>
-              </div>
               <div className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-cafe-donut flex-shrink-0" />
                 <span className="text-white/60 text-sm">7 AM – 9 PM Daily</span>

@@ -34,7 +34,7 @@ export function Hero() {
         className="absolute right-0 bottom-0 hidden lg:block w-[550px] xl:w-[650px] pointer-events-none"
       >
         <img
-          src="/images/donut-cat-new.png"
+          src="https://customer-assets.emergentagent.com/wingman/d53aa737-c70f-4389-9325-d25ce0b4093e/attachments/e32fadd571da434ba2adbf7175d0ed7f_RenderedImage.jpeg"
           alt="Donut the cat sitting on a giant pink donut"
           className="w-full h-auto drop-shadow-2xl"
         />
@@ -103,7 +103,7 @@ export function Hero() {
           className="lg:hidden mt-10 flex justify-center"
         >
           <img
-            src="/images/donut-cat-new.png"
+            src="https://customer-assets.emergentagent.com/wingman/d53aa737-c70f-4389-9325-d25ce0b4093e/attachments/e32fadd571da434ba2adbf7175d0ed7f_RenderedImage.jpeg"
             alt="Donut the cat sitting on a giant pink donut"
             className="w-72 md:w-96 h-auto drop-shadow-xl"
           />
